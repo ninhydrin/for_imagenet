@@ -43,7 +43,7 @@ for line in file_list:
     num=int( line.split()[1])
     if(num!=abc):
         os.remove("param_list")
-        pickle.dump(hist,open("palam_list","w"),-1)        
+        pickle.dump(hist,open("param_list","w"),-1)        
     print filepath,num
     net.blobs['data'].data[...] = transformer.preprocess('data', caffe.io.load_image(filepath))
     out = net.forward()
