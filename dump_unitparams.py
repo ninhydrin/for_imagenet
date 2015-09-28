@@ -50,10 +50,6 @@ for line in file_list:
     k=[net.params[i][0].data for i in params]
     hist.append(k)
     abc=num
-    
-
-    
-
     #top_k = net.blobs['prob'].data[0].flatten().argsort()[-1:-10:-1]
     #hist[net.blobs['prob'].data[0].flatten().argsort().argmax()]=1
     #plt.text(top_k[-1], net.blobs['prob'].data[0].flatten()[top_k[0]], '{0} is Max'.format(top_k[0]) , ha = 'center', va = 'bottom')
